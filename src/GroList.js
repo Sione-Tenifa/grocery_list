@@ -1,4 +1,6 @@
 import React from 'react';
+import './App.css';
+
 
 class GroList extends React.Component {
 
@@ -18,15 +20,18 @@ class GroList extends React.Component {
     const { name } = this.state;
 
     return (
-      <form onSubmit={this.handleSubmit}>
-        <input 
-          value={name} 
-          name="name"
-          onChange={this.handleChange}
-          required 
-          placeholder="Add An Item" 
-        />
-      </form>
+      
+      <div class="form">
+        <form  onSubmit={this.handleSubmit}>
+          <input 
+            value={name} 
+            name="name"
+            onChange={this.handleChange}
+            required 
+            placeholder="Add An Item" 
+          />
+        </form>
+      </div>
     )
   }
 }

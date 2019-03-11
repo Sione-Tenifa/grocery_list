@@ -2,6 +2,8 @@
 
 import React from 'react';
 import Todo from './Todo'
+import './App.css';
+
 
 const List = ({ items, name, todoClick }) => (
   <div>
