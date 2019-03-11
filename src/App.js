@@ -11,7 +11,8 @@ class App extends Component {
       { id: 1, name: "Milk", complete: false, },
       { id: 2, name: "Rice", complete: false, },
       { id: 3, name: "Chicken", complete: false, },
-    ]
+      
+    ] 
   };
 
   
@@ -47,22 +48,14 @@ class App extends Component {
   
   render() {
     const { groLi } = this.state;
-    const navComponent = React.createClass({
-      render: function() {
-        return (
-          <nav>
-  
-          </nav>
-        );
-      }
-    });
+   
 
   
 
     return (
       
 
-      <div className="App">
+      <div className="App" class="box">
         <li>
           <div class="form">
           <GroList addItem={this.addItem} />

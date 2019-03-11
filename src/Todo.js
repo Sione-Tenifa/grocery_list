@@ -11,7 +11,7 @@ const Todo = ({ id, name, complete, todoClick }) => (
 
 const styles = {
   todo: { cursor: 'pointer' },
-  complete: { color: 'grey', textDecoration: 'line-through' },
+  complete: { color: 'blue', textDecoration: 'line-through' },
 };
 
 export default Todo;
